@@ -39,18 +39,20 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 2rem;
+  padding: 1.2rem 2.5rem;
   background: rgba(24,24,24,0.95);
   position: sticky;
   top: 0;
   z-index: 100;
   border-bottom: 1px solid rgba(212,175,55,0.2);
+  gap: 2rem;
 }
 .logo {
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: bold;
   color: var(--gold);
   letter-spacing: 2px;
+  flex-shrink: 0;
 }
 .logo span {
   color: var(--white);
@@ -58,7 +60,7 @@ body {
 nav a {
   color: var(--white);
   text-decoration: none;
-  margin: 0 1.2rem;
+  margin: 0 1.5rem;
   font-size: 1.1rem;
   transition: color var(--transition);
 }
@@ -68,13 +70,14 @@ nav a:hover {
 .nav-actions {
   display: flex;
   align-items: center;
-  gap: 2.2rem;
+  gap: 2.5rem;
+  flex-shrink: 0;
 }
 .cart-icon {
   position: relative;
   cursor: pointer;
-  width: 54px;
-  height: 54px;
+  width: 58px;
+  height: 58px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -83,14 +86,15 @@ nav a:hover {
   border: 2.5px solid var(--gold);
   box-shadow: 0 2px 12px rgba(212,175,55,0.10);
   transition: box-shadow 0.2s, border 0.2s;
+  flex-shrink: 0;
 }
 .cart-icon:hover {
   box-shadow: 0 4px 18px rgba(212,175,55,0.18);
   border-color: var(--dark-gray);
 }
 .cart-icon img {
-  width: 32px;
-  height: 32px;
+  width: 34px;
+  height: 34px;
 }
 .cart-badge {
   position: absolute;
@@ -111,13 +115,14 @@ nav a:hover {
   background: var(--gold);
   color: var(--dark-gray);
   border: 2.5px solid var(--gold);
-  padding: 0.7rem 2.2rem;
-  border-radius: 28px;
-  font-size: 1.18rem;
+  padding: 0.8rem 2.5rem;
+  border-radius: 30px;
+  font-size: 1.2rem;
   font-weight: bold;
   cursor: pointer;
   transition: background var(--transition), color var(--transition), box-shadow 0.2s;
   box-shadow: 0 2px 12px rgba(212,175,55,0.10);
+  flex-shrink: 0;
 }
 #loginBtn:hover {
   background: var(--white);
