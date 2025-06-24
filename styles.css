@@ -41,7 +41,7 @@ body {
   justify-content: space-between;
   padding: 1rem 2rem;
   background: rgba(24,24,24,0.97);
-  position: static;
+  position: static !important;
   z-index: 100;
   border-bottom: 1px solid rgba(212,175,55,0.2);
   width: 100%;
@@ -618,6 +618,7 @@ footer {
     align-items: center;
     padding: 0.8rem 1rem;
     min-height: unset;
+    position: static;
   }
   .nav-actions {
     gap: 0.8rem;
@@ -632,6 +633,7 @@ footer {
     align-items: center;
     flex-wrap: nowrap;
     min-height: 50px;
+    position: static;
   }
   
   .logo {
