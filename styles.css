@@ -602,36 +602,44 @@ footer {
 @media (max-width: 600px) {
   .navbar {
     flex-direction: row;
-    gap: 0.3rem;
-    padding: 0.6rem 0.8rem;
+    gap: 0.2rem;
+    padding: 0.4rem 0.5rem;
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
+    height: 45px;
   }
   
   .logo {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     flex-shrink: 0;
-    margin-right: 0.5rem;
+    margin-right: 0.2rem;
   }
   
   .nav-actions {
     flex-direction: row;
     align-items: center;
-    gap: 0.3rem;
+    gap: 0.2rem;
     width: auto;
     flex-shrink: 0;
   }
   
   .cart-icon {
-    width: 36px;
-    height: 36px;
+    width: 28px;
+    height: 28px;
     flex-shrink: 0;
   }
   
   .cart-icon img {
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
+  }
+  
+  .cart-badge {
+    top: -6px;
+    right: -6px;
+    padding: 2px 6px;
+    font-size: 0.7rem;
   }
   
   .mobile-account-dropdown {
@@ -643,9 +651,9 @@ footer {
   
   #mobileAccountBtn {
     width: auto;
-    padding: 0.3rem 0.6rem;
-    font-size: 0.75rem;
-    border-radius: 15px;
+    padding: 0.2rem 0.4rem;
+    font-size: 0.65rem;
+    border-radius: 12px;
     background: var(--gold);
     color: var(--dark-gray);
     font-weight: bold;
@@ -659,13 +667,13 @@ footer {
     position: absolute;
     right: 0;
     top: 110%;
-    width: 160px;
+    width: 140px;
     background: var(--dark-gray);
-    border-radius: 8px;
+    border-radius: 6px;
     box-shadow: 0 4px 16px rgba(0,0,0,0.18);
     z-index: 20;
     flex-direction: column;
-    padding: 0.4rem 0;
+    padding: 0.3rem 0;
     border: 1px solid rgba(212,175,55,0.2);
   }
   
@@ -677,9 +685,9 @@ footer {
     background: none;
     border: none;
     color: var(--white);
-    padding: 0.6rem 0.8rem;
+    padding: 0.4rem 0.6rem;
     text-align: left;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     cursor: pointer;
     transition: background var(--transition);
     width: 100%;
@@ -864,14 +872,14 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 36px;
-  height: 36px;
+  width: 28px;
+  height: 28px;
   background: transparent;
   border: none;
   cursor: pointer;
   z-index: 120;
-  gap: 3px;
-  border-radius: 6px;
+  gap: 2px;
+  border-radius: 4px;
   transition: background 0.2s;
   flex-shrink: 0;
 }
@@ -882,8 +890,8 @@ footer {
 
 .hamburger span {
   display: block;
-  width: 20px;
-  height: 2px;
+  width: 16px;
+  height: 1.5px;
   background: var(--gold);
   border-radius: 1px;
   transition: all 0.3s;
