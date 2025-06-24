@@ -1,3 +1,20 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 :root {
   --gold: #d4af37;
   --dark-gray: #181818;
@@ -9,10 +26,13 @@
 body {
   background: var(--dark-gray);
   color: var(--white);
-  font-family: 'Montserrat', Arial, sans-serif;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   margin: 0;
   padding: 0;
   padding-top: 80px; /* Account for fixed navbar */
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .navbar {
@@ -27,6 +47,7 @@ body {
   right: 0;
   z-index: 100;
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(212,175,55,0.2);
 }
 .logo {
